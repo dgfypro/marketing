@@ -82,12 +82,23 @@
 
   <main id="main-content">
 
+    <!-- popup -->
     <div id="popup1" class="overlay">
       <div class="popup">
         <h2></h2>
         <a class="close" href="#">&times;</a>
         <div class="content">
           <img src="assets/img/popup-02.png">
+        </div>
+      </div>
+    </div>
+
+    <div id="popup2" class="overlay">
+      <div class="popup">
+        <h2></h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <img src="assets/img/tenten-06.png">
         </div>
       </div>
     </div>
@@ -106,6 +117,7 @@
               <img src="assets/img/laptop-03.png" class="display-none-web"> 
               <img src="assets/img/phonemockup-01.png" class="display-none-mobile">
               <a class="button display-none-opacity" id="promopopup" href="#popup1">Let me Pop up</a>
+              <a class="button display-none-opacity" id="promopopup2" href="#popup2">Let me Pop up</a>
           </div>
         </div>
       </div>
@@ -283,7 +295,8 @@
   </script>
   <script>
     window.onload=function(){
-      document.getElementById("promopopup").click();
+      document.getElementById("promopopup2").click();
+      // document.getElementById("promopopup").click();
     };
   </script>
 </body>
